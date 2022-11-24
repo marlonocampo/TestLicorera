@@ -12,4 +12,6 @@ public class LicoreraDbContext : DbContext
   public DbSet<TasaCambio> tasaCambio { get; set; } = null!;
   public DbSet<Facturas> facturas { get; set; } = null!;
   public DbSet<FacturaDetalle> facturadetalle { get; set; } = null!;
+  public DbSet<ReporteVentas> reportes { get; set; } = null!;
+
 }
