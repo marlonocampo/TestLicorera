@@ -8,4 +8,8 @@ public class LicoreraDbContext : DbContext
 
   }
   public DbSet<Clientes> clientes { get; set; } = null!;
+  public DbSet<Productos> productos { get; set; } = null!;
+  public DbSet<TasaCambio> tasaCambio { get; set; } = null!;
+  public DbSet<Facturas> facturas { get; set; } = null!;
+  public DbSet<FacturaDetalle> facturaDetalle { get; set; } = null!;
 }
