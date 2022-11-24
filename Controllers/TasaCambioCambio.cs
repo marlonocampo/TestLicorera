@@ -25,7 +25,7 @@ public class TasaCambioController : ControllerBase
                                              .Where(tc => tc.estadoRegistro == true)
                                              .ToListAsync();
 
-      return Ok(new { Exito = true, tipoCambio = tasaCambios });
+      return Ok(new { Exito = true, tasaCambios = tasaCambios });
     }
     catch (System.Exception ex)
     {
@@ -85,7 +85,7 @@ public class TasaCambioController : ControllerBase
       nuevaTasaCambio.mes = tasaCambio.mes;
       nuevaTasaCambio.fecha = tasaCambio.fecha;
       nuevaTasaCambio.mes = tasaCambio.mes;
-      nuevaTasaCambio.tipoCambio = tasaCambio.tipoCambio;
+      nuevaTasaCambio.valor = tasaCambio.valor;
 
       _dbLicorera.Update(nuevaTasaCambio);
       _dbLicorera.SaveChanges();

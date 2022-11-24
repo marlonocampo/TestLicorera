@@ -141,7 +141,7 @@ public class ProductoController : ControllerBase
       var tasaCambio = (from tc in _dbLicorera.tasaCambio
                         where tc.fecha == fecha
                         select tc).First();
-      return Convert.ToDecimal(tasaCambio.tipoCambio);
+      return Convert.ToDecimal(tasaCambio.valor);
     }
     catch (System.Exception)
     {
