@@ -56,7 +56,7 @@ public class ReporteController : ControllerBase
     }
     catch (System.Exception ex)
     {
-      return BadRequest("Ha ocurrido un error en la busqueda!");
+      return BadRequest("Ha ocurrido un error en la busqueda!" + ex);
     }
   }
 }
